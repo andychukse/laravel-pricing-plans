@@ -26,18 +26,19 @@
     }
   },
   "require": {
-    "php": "^7.3|^8.0",
-    "illuminate/database": "^8.0",
-    "illuminate/support": "^8.0",
-    "nesbot/carbon": "^2.43"
+    "php": "^7.3||^8.0||^8.1",
+    "illuminate/database": "^8.0||^9.0",
+    "illuminate/support": "^8.0||^9.0",
+    "nesbot/carbon": "^2.62.1"
   },
   "require-dev": {
-    "fakerphp/faker": "^1.14.1",
-    "mockery/mockery": "^1.4.2",
-    "orchestra/database": "6.x-dev",
-    "orchestra/testbench": "^6.9",
-    "phpunit/phpunit": "~9.0",
-    "squizlabs/php_codesniffer": "^3.5"
+    "fakerphp/faker": "^1.21",
+    "mockery/mockery": "^1.5.1",
+    "orchestra/database": "7.0.x-dev",
+    "orchestra/testbench": "^7.0",
+    "phpunit/phpunit": "^9.5.8",
+    "squizlabs/php_codesniffer": "3.*",
+    "laravie/query-filter": "dev-master"
   },
   "scripts": {
     "phpunit": "php vendor/phpunit/phpunit/phpunit --coverage-html build/coverage",
@@ -50,6 +51,9 @@
     "optimize-autoloader": true
   },
   "extra": {
+    "branch-alias": {
+      "dev-master": "3.x-dev"
+    },
     "laravel": {
       "providers": [
         "Laravel\\PricingPlans\\PricingPlansServiceProvider"

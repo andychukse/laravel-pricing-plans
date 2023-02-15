@@ -16,8 +16,8 @@ For Laravel 7.0+ use v0.4, for Laravel 8.0+ use v0.5
 
 ## Requirements
 
-* php >=7.2 || 8.0+
-* Laravel 7.0+ || 8.0+
+* php >=7.2 || 8.0+ || 8.1+
+* Laravel 7.0+ || 8.0+ || 9.0+
 
 ## Installation
 
@@ -33,7 +33,7 @@ $ composer require andychukse/laravel-pricing-plans
 ## Testing
 
 ```bash
-$ git clone git@github.com/oanhnn/laravel-pricing-plans.git /path
+$ git clone git@github.com/andychukse/laravel-pricing-plans.git /path
 $ cd /path
 $ composer install
 $ composer phpunit
@@ -42,7 +42,7 @@ $ composer phpunit
 
 ## Credits
 
-I forked and updated this project to support laravel 8 from [oanhnn/laravel-pricing-plans](https://github.com/oanhnn/laravel-pricing-plans) project in Jan-2021.
+I forked and updated this project to support laravel 8/9 from [oanhnn/laravel-pricing-plans](https://github.com/oanhnn/laravel-pricing-plans) project.
 
 
 ## License

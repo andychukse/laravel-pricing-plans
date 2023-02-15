@@ -9,7 +9,6 @@
          processIsolation="false"
          stopOnError="false"
          stopOnFailure="false"
-         syntaxCheck="true"
          verbose="true"
 >
     <php>
@@ -25,12 +24,15 @@
     </testsuites>
 
     <!-- Ignore vendor tests in code coverage reports -->
-    <filter>
-        <blacklist>
+    <coverage includeUncoveredFiles="true"
+              processUncoveredFiles="true"
+              ignoreDeprecatedCodeUnits="true"
+              disableCodeCoverageIgnore="true">
+        <exclude>
             <directory suffix=".php">vendor</directory>
-        </blacklist>
-        <whitelist>
+        </exclude>
+        <include>
             <directory suffix=".php">src</directory>
-        </whitelist>
-    </filter>
+        </include>
+    </coverage>
 </phpunit>
