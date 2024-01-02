@@ -49,7 +49,7 @@ class PeriodTest extends TestCase
     /**
      * @return array
      */
-    public function periodDataProvider()
+    public static function periodDataProvider()
     {
         $st1 = new DateTime('2018-01-04 10:00:09');
         $st2 = new DateTime('2018-01-04 10:10:09');

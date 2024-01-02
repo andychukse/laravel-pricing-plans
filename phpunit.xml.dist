@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<phpunit backupGlobals="false"
-         backupStaticAttributes="false"
-         bootstrap="tests/bootstrap.php"
-         colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnError="false"
-         stopOnFailure="false"
-         verbose="true"
->
-    <php>
-        <!-- <ini name="memory_limit" value="-1"/> -->
-        <!-- <env name="APP_ENV" value="testing"/> -->
-    </php>
-
-    <!-- Add any additional test suites you want to run here -->
-    <testsuites>
-        <testsuite name="Test Source">
-            <directory>tests</directory>
-        </testsuite>
-    </testsuites>
-
-    <!-- Ignore vendor tests in code coverage reports -->
-    <coverage includeUncoveredFiles="true"
-              processUncoveredFiles="true"
-              ignoreDeprecatedCodeUnits="true"
-              disableCodeCoverageIgnore="true">
-        <exclude>
-            <directory suffix=".php">vendor</directory>
-        </exclude>
-        <include>
-            <directory suffix=".php">src</directory>
-        </include>
-    </coverage>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" bootstrap="tests/bootstrap.php" colors="true" processIsolation="false" stopOnError="false" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" cacheDirectory=".phpunit.cache" backupStaticProperties="false" displayDetailsOnTestsThatTriggerDeprecations="true">
+  <php>
+    <!-- <ini name="memory_limit" value="-1"/> -->
+    <!-- <env name="APP_ENV" value="testing"/> -->
+  </php>
+  <!-- Add any additional test suites you want to run here -->
+  <testsuites>
+    <testsuite name="Test Source">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  <!-- Ignore vendor tests in code coverage reports -->
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+    <exclude>
+      <directory suffix=".php">vendor</directory>
+    </exclude>
+  </source>
 </phpunit>
