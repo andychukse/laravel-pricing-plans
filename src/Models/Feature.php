@@ -45,7 +45,7 @@ class Feature extends Model
      *
      * @var array
      */
-    public $casts = [
+    protected $casts = [
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];

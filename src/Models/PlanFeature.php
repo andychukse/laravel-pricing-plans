@@ -35,7 +35,7 @@ class PlanFeature extends Pivot
      *
      * @var array
      */
-    public $casts = [
+    protected $casts = [
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
