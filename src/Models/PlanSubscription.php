@@ -59,17 +59,17 @@ class PlanSubscription extends Model
     ];
 
     /**
-     * The attributes that should be mutated to dates.
+     * The attributes that should be mutated to dates
      *
      * @var array
      */
-    protected $dates = [
-        'created_at',
-        'updated_at',
-        'starts_at',
-        'ends_at',
-        'canceled_at',
-        'trial_ends_at',
+    public $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'starts_at' => 'datetime',
+        'ends_at' => 'datetime',
+        'canceled_at' => 'datetime',
+        'trial_ends_at' => 'datetime',
     ];
 
     /**

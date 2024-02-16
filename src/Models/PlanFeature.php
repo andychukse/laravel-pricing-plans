@@ -31,14 +31,15 @@ class PlanFeature extends Pivot
     ];
 
     /**
-     * The attributes that should be mutated to dates.
+     * The attributes that should be mutated to dates
      *
      * @var array
      */
-    protected $dates = [
-        'created_at',
-        'updated_at',
+    public $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
     ];
+
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
