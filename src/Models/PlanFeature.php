@@ -4,6 +4,7 @@ namespace Laravel\PricingPlans\Models;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Laravel\PricingPlans\Models\Concerns\BelongsToPlanModel;
+use Illuminate\Support\Facades\Config;
 
 /**
  * Class PlanFeature
