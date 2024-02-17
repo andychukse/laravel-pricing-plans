@@ -45,4 +45,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Support for PHP 8.1 and Laravel 9.*
 - Added support for php 8.1 and Laravel 9
 
+## [0.6.1] - 2024-02-16
+### Support for PHP 8.2 and Laravel 10.*
+- Added support for php 8.2 and Laravel 10
+
+## [0.6.3] - 2023-02-15
+### Fixed date casting issues for laravel 10
+- Fixed date casting issues for laravel 10
+
 

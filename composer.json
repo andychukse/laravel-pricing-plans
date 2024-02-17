@@ -41,9 +41,9 @@
     "laravie/query-filter": "dev-master"
   },
   "scripts": {
-    "phpunit": "php vendor/phpunit/phpunit/phpunit --coverage-html build/coverage",
-    "phpcs": "php vendor/squizlabs/php_codesniffer/bin/phpcs",
-    "phpcbf": "php vendor/squizlabs/php_codesniffer/bin/phpcbf"
+    "phpunit": "php ./vendor/bin/phpunit --coverage-html build/coverage",
+    "phpcs": "php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "phpcbf": "php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
   },
   "config": {
     "preferred-install": "dist",

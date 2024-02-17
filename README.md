@@ -42,7 +42,7 @@ $ composer phpunit
 
 ## Credits
 
-I forked and updated this project to support laravel 8/9 from [oanhnn/laravel-pricing-plans](https://github.com/oanhnn/laravel-pricing-plans) project.
+I forked and updated this project to support laravel 8/9/10 from [oanhnn/laravel-pricing-plans](https://github.com/oanhnn/laravel-pricing-plans) project.
 
 
 ## License
