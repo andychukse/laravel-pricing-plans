@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" bootstrap="tests/bootstrap.php" colors="true" processIsolation="false" stopOnError="false" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" cacheDirectory=".phpunit.cache" backupStaticProperties="false" displayDetailsOnTestsThatTriggerDeprecations="true">
+<phpunit 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  backupGlobals="false" 
+  bootstrap="tests/bootstrap.php" 
+  colors="true" 
+  processIsolation="false" 
+  stopOnError="false" 
+  stopOnFailure="false" 
+  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" 
+  cacheDirectory=".phpunit.cache" 
+  backupStaticProperties="false" 
+  displayDetailsOnTestsThatTriggerDeprecations="true"
+>
   <php>
     <!-- <ini name="memory_limit" value="-1"/> -->
     <!-- <env name="APP_ENV" value="testing"/> -->
